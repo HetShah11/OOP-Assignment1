@@ -13,11 +13,12 @@ members Functions
 */
 import java.util.Scanner;
 
- class Account
- {
+class Account
+{
      private long accNum;
      private String holderName;
      private double balance;
+     private int password;
 
      Scanner sc = new Scanner(System.in);
 
@@ -54,4 +55,14 @@ import java.util.Scanner;
          this.balance = this.balance-with;
          System.out.println("THANK YOU FOR YOUR PATIENCE\nUPDATED BALANCE : "+this.balance);
      }
- }
+}
+
+class ADMIN extends Account
+{
+    void open()
+    {
+        super();
+        System.out.println("ENTER ALL THE INFORMATIONS :-");
+        System.out.println("ACCOUNT NUMBER");
+    }
+}
