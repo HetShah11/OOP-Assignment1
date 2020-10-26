@@ -1,7 +1,7 @@
 /*
 ----Account class----
 data members
--account number
+-account number (use static might be better option)
 -account holder name
 -balance
 
@@ -12,6 +12,7 @@ members Functions
 -withdraw - removes money from ACCOUNT
 */
 import java.util.Scanner;
+import java.io.*;
 
 class Account
 {
@@ -57,12 +58,10 @@ class Account
      }
 }
 
-class ADMIN extends Account
+class rootfile
 {
-    void open()
+    public static void main(String args[])
     {
-        super();
-        System.out.println("ENTER ALL THE INFORMATIONS :-");
-        System.out.println("ACCOUNT NUMBER");
+
     }
 }
